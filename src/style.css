@@ -29,20 +29,20 @@ body {
 .navBar {
   display: flex;
   justify-content: space-between;
-  width: min(1140px, 90%);
   align-items: center;
+  width: max(30%, 900px);
 }
 
 .mainTitle {
   color: white;
-  font-size: 30px;
+  font-size: max(1.3em, 1.2vw);
 }
 
 .navButtons {
   list-style: none;
   display: flex;
   color: white;
-  font-size: 20px;
+  font-size: max(1.1em, 1vw);
   justify-content: space-around;
   gap: 2.5rem;
 }
@@ -58,13 +58,15 @@ body {
   background-color: transparent;
   margin: 0 auto;
   gap: 20px;
-  width: 100%;
+  min-width: 100%;
 }
+
 .logo {
   color: rgb(204, 162, 107);
   font-family: 'Great Vibes';
   font-size: 40px;
 }
+
 .title {
   font-size: 48px;
   padding-bottom: 20px;
@@ -75,6 +77,8 @@ body {
 .description-home {
   font-size: 24px;
   color: white;
+  width: max(350px, 50%);
+  text-align: center;
 }
 
 .hours {
@@ -84,6 +88,7 @@ body {
   width: 263px;
   color: white;
 }
+
 .hours > * {
   font-size: 20px;
   font-weight: 100;
@@ -92,7 +97,7 @@ body {
 .menu-section,
 .contact-section {
   background-color: white;
-  width: 100%;
+  min-width: 100%;
   font-family: 'Poppins';
   padding-top: 30px;
 }
@@ -111,7 +116,8 @@ body {
 }
 
 .menu-link-item {
-  padding: 20px 70px;
+  padding: 15px max(5%, 10px);
+  text-align: center;
 }
 
 .menu-link-item:hover {
@@ -122,10 +128,10 @@ body {
 .menu-wrapper {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(400px, 100%), 1fr));
-  width: 70%;
+  max-width: 70%;
   margin: 0 auto;
   gap: 10px;
-  padding-bottom: 180px;
+  padding-bottom: 340px;
 }
 
 .menu-item {
@@ -134,13 +140,12 @@ body {
   justify-items: center;
   align-items: center;
   border: 1px solid rgb(0, 0, 0, 0.15);
-  font-size: 18px;
+  font-size: 17px;
   text-align: center;
 }
 
 .menu-pizzas {
-  height: 240px;
-  width: auto;
+  max-width: 100%;
   aspect-ratio: 2 / 1.5;
 }
 
@@ -152,8 +157,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: min(60%, 700px);
-  min-width: 500px;
+  width: min(60%, 600px);
+  min-width: 250px;
   justify-content: flex-start;
 }
 
@@ -161,7 +166,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1.3fr;
   padding-top: 80px;
-  gap: 20px;
+  gap: 10px;
 }
 
 .form-item {
@@ -172,19 +177,19 @@ body {
 .contact-form {
   display: flex;
   flex-direction: column;
-  width: 80%;
+  width: max(200px, 70%);
   gap: 10px;
 }
 
 .contact-submit-button {
-  width: 60px;
+  min-width: 60px;
   margin: 0 auto;
   margin-top: 10px;
   margin-bottom: 400px;
 }
 
 .label-inquiry-input {
-  height: 100px;
+  min-height: 100px;
 }
 
 input,
@@ -199,8 +204,8 @@ textarea {
 }
 
 .contact-photo-first {
-  height: 400px;
-  width: 300px;
+  width: min(300px, 80%);
+  max-height: 500px;
   object-fit: cover;
   object-position: 60% 0;
 }
