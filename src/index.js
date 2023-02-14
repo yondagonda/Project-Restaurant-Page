@@ -14,6 +14,10 @@ mainTitle.classList.add('mainTitle');
 mainTitle.innerText = "Johny's Pizzeria";
 navBar.appendChild(mainTitle);
 
+mainTitle.addEventListener('click', () => {
+  pageLoad();
+});
+
 const navButtons = document.createElement('ul');
 navButtons.classList.add('navButtons');
 navBar.appendChild(navButtons);

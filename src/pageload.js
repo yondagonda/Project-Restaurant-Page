@@ -2,9 +2,13 @@ function pageLoad() {
   const content = document.getElementById('content');
   content.innerHTML = '';
 
+  const logo = document.createElement('div');
+  logo.classList.add('logo');
+  logo.innerText = 'Johnys Pizzeria';
+
   const title = document.createElement('div');
   title.classList.add('title');
-  title.innerText = "Jonny's Pizzeria";
+  title.innerText = 'OUR STORY';
 
   const descriptionHome = document.createElement('div');
   descriptionHome.classList.add('description-home');
@@ -43,14 +47,11 @@ function pageLoad() {
   saturday.classList.add('saturday');
   saturday.innerText = 'Saturday: 8am - 8pm';
 
-  const location = document.createElement('div');
-  location.classList.add('location');
-  location.innerText = 'Location';
-
   const address = document.createElement('div');
   address.classList.add('address');
   address.innerText = '123 Forest Drive, Forestville, Maine';
 
+  content.appendChild(logo);
   content.appendChild(title);
   content.appendChild(descriptionHome);
   content.appendChild(hours);
@@ -61,8 +62,6 @@ function pageLoad() {
   hours.appendChild(thursday);
   hours.appendChild(friday);
   hours.appendChild(saturday);
-  content.appendChild(location);
-  location.appendChild(address);
 }
 
 export default pageLoad;
